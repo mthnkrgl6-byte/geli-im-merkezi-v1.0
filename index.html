@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kalde Eğitim Platformu</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app">
+      <aside class="sidebar">
+        <div class="brand">
+          <div class="brand__logo">kalde</div>
+          <span class="brand__tag">Kalite. Değer.</span>
+        </div>
+        <nav class="nav">
+          <button class="nav__item">Ana sayfa</button>
+          <button class="nav__item nav__item--active">Satış Görüşmeleri</button>
+          <button class="nav__item">Proje</button>
+          <button class="nav__item">Tahsilat</button>
+          <button class="nav__item">Satış</button>
+          <button class="nav__item">Müşteri Hizmetleri</button>
+        </nav>
+        <div class="panel">
+          <h3 class="panel__title">Temel İşlemler</h3>
+          <ul class="panel__list">
+            <li>Tüm Eğitimler</li>
+            <li>Devam Eden Eğitimler</li>
+            <li>Tamamlanan Eğitimler</li>
+            <li>Sertifikalar</li>
+          </ul>
+        </div>
+        <div class="panel panel--admin">
+          <h3 class="panel__title">Yönetici Paneli</h3>
+          <p>Eğitim Videoları, Quiz Soruları ve Video Profil Fotoğrafları burada düzenlenebilir.</p>
+          <button class="primary">Eğitim Düzenleme</button>
+          <div class="panel__upload">
+            <span>Sertifika Şablonu</span>
+            <button class="ghost">Şablon Yükle</button>
+          </div>
+        </div>
+      </aside>
+      <main class="content">
+        <header class="topbar">
+          <div>
+            <h1>Satış Görüşmeleri</h1>
+            <p>Kalde çalışanları için eğitim platformu</p>
+          </div>
+          <div class="topbar__actions">
+            <button class="ghost">Online Toplantı</button>
+            <button class="primary">Proje Satış Temsilcisi</button>
+            <div class="user">
+              <span class="user__avatar"></span>
+              <span class="user__name">Metehan Kargılı</span>
+            </div>
+          </div>
+        </header>
+
+        <section class="filters">
+          <div class="tabs">
+            <button class="tab tab--active">Tüm Eğitimler</button>
+            <button class="tab">Devam Eden Eğitimler</button>
+            <button class="tab">Tamamlanan Eğitimler</button>
+            <button class="tab">Sertifikalar</button>
+          </div>
+          <div class="filters__select">
+            <label for="kategori">Kategori</label>
+            <select id="kategori">
+              <option>Tüm Videolar</option>
+              <option>Ürünler</option>
+              <option>Kişisel Gelişim</option>
+              <option>İş Sağlığı ve Güvenliği</option>
+              <option>Diğer</option>
+            </select>
+          </div>
+          <div class="filters__count">4 Eğitim</div>
+        </section>
+
+        <section class="cards">
+          <article class="card">
+            <div class="card__media">
+              <div class="card__image card__image--pprc"></div>
+            </div>
+            <h3>Pprc Boru ve Ek Parçaları</h3>
+            <p>Teknik Bilgiler</p>
+            <button class="primary">Eğitime Katıl</button>
+            <span class="card__progress">İlerleme: %0</span>
+            <div class="card__status">
+              <span>BAŞARI</span>
+              <div class="stars">
+                <span>☆</span><span>☆</span><span>☆</span>
+              </div>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card__media">
+              <div class="card__image card__image--radiant"></div>
+            </div>
+            <h3>Yerden Isıtma Sistemleri</h3>
+            <p>Teknik Bilgiler</p>
+            <button class="primary">Eğitime Katıl</button>
+            <span class="card__progress">İlerleme: %10</span>
+            <div class="card__status">
+              <span>BAŞARI</span>
+              <div class="stars">
+                <span>☆</span><span>☆</span><span>☆</span>
+              </div>
+              <span class="badge badge--warning">Devam Ediyor</span>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card__media">
+              <div class="card__image card__image--pvc"></div>
+            </div>
+            <h3>PVC Boru ve Ek Parçaları</h3>
+            <p>Teknik Bilgiler</p>
+            <button class="primary">Eğitime Katıl</button>
+            <span class="card__progress">İlerleme: %100</span>
+            <div class="card__status">
+              <span>BAŞARI</span>
+              <div class="stars">
+                <span class="star star--filled">★</span><span class="star star--filled">★</span><span class="star star--filled">★</span>
+              </div>
+              <span class="badge badge--success">Tamamlandı</span>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card__media">
+              <div class="card__image card__image--silent"></div>
+            </div>
+            <h3>3K Sessiz Boru Teknik Bilgiler</h3>
+            <p>Teknik Bilgiler</p>
+            <button class="primary">Eğitime Katıl</button>
+            <span class="card__progress">İlerleme: %100</span>
+            <div class="card__status">
+              <span>BAŞARI</span>
+              <div class="stars">
+                <span class="star star--filled">★</span><span class="star star--filled">★</span><span>☆</span>
+              </div>
+              <span class="badge badge--success">Tamamlandı</span>
+            </div>
+          </article>
+        </section>
+
+        <section class="details">
+          <div class="details__column">
+            <h2>Ders Bölümü</h2>
+            <p class="muted">Ders videoları tamamlandıktan sonra quiz erişimi açılır.</p>
+            <ul class="lesson-list">
+              <li class="lesson">
+                <div>
+                  <h4>1. Video - Ürün Tanıtımı</h4>
+                  <span>07:30 dk</span>
+                </div>
+                <span class="status status--done">Tamamlandı</span>
+              </li>
+              <li class="lesson">
+                <div>
+                  <h4>2. Video - Kurulum Adımları</h4>
+                  <span>09:10 dk</span>
+                </div>
+                <span class="status status--progress">Devam Ediyor</span>
+              </li>
+              <li class="lesson">
+                <div>
+                  <h4>3. Video - Saha Uygulamaları</h4>
+                  <span>12:40 dk</span>
+                </div>
+                <span class="status">Beklemede</span>
+              </li>
+            </ul>
+          </div>
+          <div class="details__column">
+            <h2>Quiz ve Sertifikasyon</h2>
+            <div class="quiz-card">
+              <h3>Quiz Kuralları</h3>
+              <ul>
+                <li>Quiz sadece tüm videolar bittiğinde açılır.</li>
+                <li>Toplam soru sayısının yarısından fazlası doğru olmalı.</li>
+                <li>Başarılı olanlar otomatik sertifika alır.</li>
+              </ul>
+              <button class="ghost" disabled>Quiz Kilitli</button>
+            </div>
+            <div class="certificate">
+              <h3>Sertifika Durumu</h3>
+              <p>Şablon yönetici tarafından yüklendikten sonra sertifikalar otomatik üretilir.</p>
+              <div class="certificate__preview">
+                <span>Şablon Önizleme</span>
+              </div>
+              <button class="primary">Sertifika İndir</button>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
